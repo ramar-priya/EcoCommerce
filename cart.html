@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <script>
+    function show(){
+        alert("Thank you for choosing us");
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+</head>
+<body>
+  <header>
+    <h1>Your Cart</h1>
+  </header>
+
+  <main>
+    <ul id="cart-items">
+        <!-- Cart items will be added here -->
+      </ul>
+      
+      <p>Total: <span id="cart-total">$0.00</span></p>
+      <button onclick="show()">Buy now</button>
+      
+      <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const cartItemsList = document.getElementById('cart-items');
+        const cartTotalSpan = document.getElementById('cart-total');
+        const storedCart = localStorage.getItem('cart');
+        
+        if (storedCart !== null) {
+          const cart = JSON.parse(storedCart);
+          
+          cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.productName} - Quantity: ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
+            cartItemsList.appendChild(li);
+          });
+          
+          const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+          cartTotalSpan.textContent = `$${total.toFixed(2)}`;
+        } else {
+          cartTotalSpan.textContent = '$0.00';
+        }
+        
+        localStorage.removeItem('cart'); // Clear the stored cart
+      });
+      </script>
+  </main>
+</body>
+</html>

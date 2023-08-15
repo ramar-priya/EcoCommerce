@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #5e9e5d;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        .category {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1.5em;
+            margin: 1em 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+        }
+        .category-content {
+            flex: 1;
+        }
+        .category img {
+            max-width: 200px;
+            margin-left: 1em;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Categories</h1>
+        <h3>Choose Your Perfect Choice</h3>
+    </header>
+    <div class="container">
+        <div class="category" onclick="location.href='makeup.html';">
+            <div class="category-content">
+                <h2>Makeup</h2>
+                <p>Elevate your beauty regimen with our organic makeup products. Experience natural radiance while treating your skin kindly. Discover the power of nature in every application.</p>
+            </div>
+            <img src="m.avif" alt="Category 1 Image">
+        </div>
+        <div class="category" onclick="location.href='skincare.html';">
+            <div class="category-content">
+                <h2>Skincare</h2>
+                <p>Elevate your skincare routine with our organic products. Harnessing nature's goodness, our items offer a gentle, chemical-free path to healthier, glowing skin</p>
+            </div>
+            <img src="hp.jpg" alt="Category 2 Image">
+        </div>
+        <div class="category" onclick="location.href='haircare.html';">
+            <div class="category-content">
+                <h2>Haircare</h2>
+                <p>Elevate your haircare with our organic products. Discover naturally vibrant and healthy hair, crafted with care for both you and the environment.</p>
+            </div>
+            <img src="hair.webp" alt="Category 3 Image">
+        </div>
+        <div class="category" onclick="location.href='bodycare.html';">
+            <div class="category-content">
+                <h2>Bodycare</h2>
+                <p>Experience the purity of organic bodycare. Revitalize your skin with nature's goodness, leaving it refreshed and radiant.</p>
+            </div>
+            <img src="body.jpg" alt="Category 3 Image">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Product Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function showMessage() {
+            alert("Item added in cart");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Philautia</h1>
+        <p>Your source for high-quality organic products</p>
+        <a href="cart.html">Cart</a>
+    </header>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="cropimg"><img src="eye.jpg" alt="Organic Product 2" class="crop"></div>
+            <div class="product-details">
+                <h2 class="product-name">Eye Balm</h2>
+                <p class="product-price">$3.00</p>
+                <button class="add-to-cart" data-price="3.00" data-name="Moisturizer" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="cropimg"><img src="facemask.jpg" alt="Organic Product 2" class="crop"></div>
+            <div class="product-details">
+                <h2 class="product-name">Facemask</h2>
+                <p class="product-price">$15.99</p>
+                <button class="add-to-cart" data-price="15.99" data-name="Body Oil" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Add more product cards as needed -->
+        <div class="product-card">
+            <div class="cropimg"><img src="serum.jpg" alt="Organic Product 2" class="crop"></div>
+            <div class="product-details">
+                <h2 class="product-name">Serum</h2>
+                <p class="product-price">$9.99</p>
+                <button class="add-to-cart" data-price="9.99" data-name="Scrub" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="cropimg"><img src="oil.webp" alt="Organic Product 2" class="crop"></div>
+            <div class="product-details">
+                <h2 class="product-name">Oil</h2>
+                <p class="product-price">$5.00</p>
+                <button class="add-to-cart" data-price="5.00" data-name="Soap" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="cropimg"><img src="moist.avif" alt="Organic Product 2" class="crop"></div>
+            <div class="product-details">
+                <h2 class="product-name">Moisturizer</h2>
+                <p class="product-price">$7.00</p>
+                <button class="add-to-cart" data-price="7.00" data-name="Soap" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        
+
+    </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

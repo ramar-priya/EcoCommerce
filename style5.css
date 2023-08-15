@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #96ba8d;
+    color: #fff;
+}
+.service{
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+}
+.max-width h1{
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.max-width h1::after{
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    padding: 50px 25px;
+    width: calc(33% - 20px);
+    border-radius: 6px;
+    background: #314a2f;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    background-color: #072603;
+}
+.box{
+    transition: all 0.3s ease;
+
+}
+.card:hover .box{
+    transform: scale(1.05s);
+}
+.box i{
+    font-size: 50px;
+    color: #072603;
+    transition: color 0.3s ease;
+}
+
+.card:hover .box i{
+    color: #fff;
+}
+.box h3{
+    font-size: 25px;
+    padding: 10px 0 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Organic Shop</h1>
+  </header>
+
+  <main>
+    <div class="product" id="product1">
+        <img src="product1_image.jpg" alt="Organic Product 1">
+        <h2>Organic Product 1</h2>
+        <p>Price: $10.00</p>
+        <button class="add-to-cart" data-price="10.00" data-name="Organic Product 1" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+      
+      <div class="product" id="product2">
+        <img src="product2_image.jpg" alt="Organic Product 2">
+        <h2>Organic Product 2</h2>
+        <p>Price: $15.00</p>
+        <button class="add-to-cart" data-price="15.00" data-name="Organic Product 2" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

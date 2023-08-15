@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #43a047;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+nav {
+    background-color: #81c784;
+    padding: 0.5rem;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 1.5rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #43a047;
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.product-details {
+    padding: 1.5rem;
+    text-align: center;
+}
+.product-name {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.product-price {
+    color: #43a047;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* Apply the same aspect ratio, crop images, and make them responsive */
+.cropimg {
+    position: relative;
+    width: 100%;
+    padding-bottom: calc(100% / (3 / 2)); /* 3:2 aspect ratio (width / height) */
+    overflow: hidden;
+}
+
+.crop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the image to cover the specified dimensions */
+}
+
